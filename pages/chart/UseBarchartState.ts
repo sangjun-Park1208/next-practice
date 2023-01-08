@@ -4,7 +4,7 @@ import { BarchartSelector } from "../state/BarchartState";
 
 export const url = "https://raw.githubusercontent.com/holtzy/data_to_viz/master/Example_dataset/7_OneCatOneNum_header.csv";
 
-interface IBarchartData {
+export interface IBarchartData {
     Country: string,
     Value: string
 }
