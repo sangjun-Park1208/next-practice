@@ -50,7 +50,7 @@ const BarChart = () => {
         svg.selectAll("mybar")
             .data(data)
             .join("rect")
-            .attr("x", d => x(d.Country))
+            .attr("x", d => !x(d.Country))
             .attr("y", d => y(+d.Value))
             .attr("width", x.bandwidth())
             .attr("height", d => height - y(+d.Value))
